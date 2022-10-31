@@ -17,7 +17,8 @@
     "noImplicitAny": false,
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
-    "isolatedModules": true
+    "isolatedModules": true,
+    "incremental": true
   },
   "exclude": ["node_modules", "pages"],
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]

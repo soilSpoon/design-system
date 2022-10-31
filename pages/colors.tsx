@@ -9,7 +9,7 @@ import {
   FontSizeIcon,
   LineHeightIcon,
 } from '@radix-ui/react-icons';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Box } from '../components/Box';
 import { Button } from '../components/Button';
 import { Code } from '../components/Code';
@@ -66,7 +66,17 @@ export const colors = [
   'orange',
 ] as const;
 
-export default function Colors() {
+export default function Page() {
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  });
+
+  return isMounted ? <Colors /> : null;
+}
+
+function Colors() {
   const [palette, setPalette] = useLocalStorage('colors-palette', true);
   const [layers, setLayers] = useLocalStorage('colors-layers', true);
   const [layersAlpha, setLayersAlpha] = useLocalStorage('colors-layers-alpha', false);
@@ -82,11 +92,6 @@ export default function Colors() {
   const [grayscale, setGrayscale] = useLocalStorage('colors-grayscale', false);
   const [blur, setBlur] = useLocalStorage('colors-blur', false);
   const [gap, setGap] = useLocalStorage('colors-gap', true);
-
-  // No SSR please
-  if (typeof window === 'undefined') {
-    return null;
-  }
 
   React.useLayoutEffect(() => {
     document.body.style.filter = grayscale ? 'saturate(0)' : '';

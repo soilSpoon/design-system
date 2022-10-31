@@ -4,7 +4,7 @@
     "declaration": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "jsx": "react",
+    "jsx": "react-jsx",
     "module": "esnext",
     "moduleResolution": "node",
     "noEmit": true,
@@ -15,6 +15,6 @@
     "strict": true,
     "target": "es5"
   },
-  "exclude": ["node_modules", "pages"],
+  "exclude": ["node_modules", "pages", "dist"],
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]
 }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Box } from '../components/Box';
 import { Section } from '../components/Section';
 import { Container } from '../components/Container';
@@ -16,6 +16,7 @@ import {
   MenuRadioItem,
   MenuSeparator,
 } from '../components/Menu';
+import { CheckedState } from '@radix-ui/react-checkbox';
 
 export function Menus() {
   return (
@@ -81,12 +82,11 @@ const LabelledMenu = () => {
 };
 
 const CheckboxItemsMenu = () => {
-  const ref = React.useRef<HTMLDivElement>(null);
   const checkboxItems = [
-    { label: 'Bold', state: React.useState(false) },
-    { label: 'Italic', state: React.useState(true) },
-    { label: 'Underline', state: React.useState(false) },
-    { label: 'Strikethrough', state: React.useState(false), disabled: true },
+    { label: 'Bold', state: React.useState<CheckedState>(false) },
+    { label: 'Italic', state: React.useState<CheckedState>(true) },
+    { label: 'Underline', state: React.useState<CheckedState>(false) },
+    { label: 'Strikethrough', state: React.useState<CheckedState>(false), disabled: true },
   ];
 
   return (

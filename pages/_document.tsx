@@ -18,6 +18,7 @@ export default class Document extends NextDocument {
     return (
       <Html lang="en">
         <Head>
+          <link rel="stylesheet" href="/fonts/fonts.css" />
           <style id="stitches" dangerouslySetInnerHTML={{ __html: getCssAndReset() }} />
         </Head>
         <body>
