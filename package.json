@@ -1,5 +1,5 @@
 {
-  "name": "@modulz/design-system",
+  "name": "@soil-spoon/design-system",
   "version": "1.0.0",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
