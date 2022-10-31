@@ -267,6 +267,10 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
         WebkitBackgroundClip: value,
         backgroundClip: value,
       }),
+
+      flex: (value: Stitches.PropertyValue<'flex'>) => ({
+        flex: value,
+      }),
     },
   });
 
