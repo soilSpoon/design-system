@@ -9,7 +9,7 @@ type TextSizeVariants = Pick<VariantProps<typeof Text>, 'size'>;
 type HeadingSizeVariants = '1' | '2' | '3' | '4';
 type HeadingVariants = { size?: HeadingSizeVariants } & Omit<VariantProps<typeof Text>, 'size'>;
 type HeadingProps = React.ComponentProps<typeof DEFAULT_TAG> &
-  HeadingVariants & { css?: CSS; as?: any };
+  HeadingVariants & { css?: CSS; as?: React.ElementType };
 
 export const Heading = React.forwardRef<React.ElementRef<typeof DEFAULT_TAG>, HeadingProps>(
   (props, forwardedRef) => {
@@ -45,3 +45,5 @@ export const Heading = React.forwardRef<React.ElementRef<typeof DEFAULT_TAG>, He
     );
   }
 );
+
+Heading.displayName = 'Heading';

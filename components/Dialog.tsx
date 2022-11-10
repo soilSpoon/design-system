@@ -62,6 +62,8 @@ const DialogContent = React.forwardRef<React.ElementRef<typeof StyledContent>, D
   )
 );
 
+DialogContent.displayName = 'DialogContent';
+
 const DialogClose = DialogPrimitive.Close;
 const DialogTitle = DialogPrimitive.Title;
 const DialogDescription = DialogPrimitive.Description;

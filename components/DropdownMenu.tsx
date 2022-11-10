@@ -1,4 +1,4 @@
-import React, { ReactText } from 'react';
+import React from 'react';
 import { CheckIcon } from '@radix-ui/react-icons';
 import { styled, CSS } from '../stitches.config';
 import * as DropdownMenuPrimitive from '@radix-ui/react-dropdown-menu';
@@ -23,6 +23,8 @@ const DropdownMenuContent = React.forwardRef<
     <StyledContent {...props} ref={forwardedRef} />
   </DropdownMenuPrimitive.Portal>
 ));
+
+DropdownMenuContent.displayName = 'DropdownMenuContent';
 
 const DropdownMenuItem = styled(DropdownMenuPrimitive.Item, itemCss);
 const DropdownMenuGroup = styled(DropdownMenuPrimitive.Group, {});
@@ -49,6 +51,8 @@ const DropdownMenuCheckboxItem = React.forwardRef<
     {children}
   </StyledDropdownMenuCheckboxItem>
 ));
+
+DropdownMenuCheckboxItem.displayName = 'DropdownMenuCheckboxItem';
 
 const DropdownMenuRadioGroup = styled(DropdownMenuPrimitive.RadioGroup, {});
 const StyledDropdownMenuRadioItem = styled(DropdownMenuPrimitive.RadioItem, itemCss);
@@ -80,6 +84,8 @@ const DropdownMenuRadioItem = React.forwardRef<
     {children}
   </StyledDropdownMenuRadioItem>
 ));
+
+DropdownMenuRadioItem.displayName = 'DropdownMenuRadioItem';
 
 export {
   DropdownMenu,

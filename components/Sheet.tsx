@@ -125,6 +125,8 @@ const SheetContent = React.forwardRef<React.ElementRef<typeof StyledContent>, Sh
   )
 );
 
+SheetContent.displayName = 'SheetContent';
+
 const SheetClose = DialogPrimitive.Close;
 const SheetTitle = DialogPrimitive.Title;
 const SheetDescription = DialogPrimitive.Description;

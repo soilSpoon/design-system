@@ -78,3 +78,5 @@ export const Checkbox = React.forwardRef<React.ElementRef<typeof StyledCheckbox>
     </StyledCheckbox>
   )
 );
+
+Checkbox.displayName = 'Checkbox';

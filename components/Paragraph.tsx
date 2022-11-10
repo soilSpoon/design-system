@@ -9,7 +9,7 @@ type TextSizeVariants = Pick<VariantProps<typeof Text>, 'size'>;
 type ParagraphSizeVariants = '1' | '2';
 type ParagraphVariants = { size?: ParagraphSizeVariants } & Omit<VariantProps<typeof Text>, 'size'>;
 type ParagraphProps = React.ComponentProps<typeof DEFAULT_TAG> &
-  ParagraphVariants & { css?: CSS; as?: any };
+  ParagraphVariants & { css?: CSS; as?: React.ElementType };
 
 export const Paragraph = React.forwardRef<React.ElementRef<typeof DEFAULT_TAG>, ParagraphProps>(
   (props, forwardedRef) => {
@@ -40,3 +40,5 @@ export const Paragraph = React.forwardRef<React.ElementRef<typeof DEFAULT_TAG>, 
     );
   }
 );
+
+Paragraph.displayName = 'Paragraph';

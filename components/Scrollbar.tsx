@@ -13,9 +13,7 @@ type Vector = {
   dy: number;
 };
 
-type ScrollAreaProps = {
-  children: any;
-};
+type ScrollAreaProps = React.PropsWithChildren;
 
 export const ScrollArea = (props: ScrollAreaProps) => {
   const thumbRef = React.useRef<HTMLDivElement>(null);
@@ -105,7 +103,7 @@ export const ScrollArea = (props: ScrollAreaProps) => {
     }
 
     /** Unwires the mouse listeners and pops the dragging class off the wrapper */
-    function onDragEnd(e: MouseEvent) {
+    function onDragEnd() {
       if (contentEl && thumbEl && wrapperEl) {
         // Add the dragging class to keep the thumb visible
         wrapperEl.classList.remove('workos-is-dragging');

@@ -9,15 +9,11 @@ import { ScrollArea } from '../components/Scrollbar';
 import { Heading } from '../components/Heading';
 import { Paragraph } from '../components/Paragraph';
 import { Button } from '../components/Button';
-import { Badge } from '../components/Badge';
 
 import { Layers } from '../custom/Layers';
 import { Properties } from '../custom/Properties';
 import { Toolbar } from '../custom/Toolbar';
 import { DarkThemeButton } from '../custom/DarkThemeButton';
-
-import { Cross1Icon, PlusIcon } from '@radix-ui/react-icons';
-import { darkTheme } from '../stitches.config';
 
 function Test() {
   return (
@@ -237,8 +233,8 @@ function Test() {
                 Corrective indent test
               </Heading>
               <Paragraph css={{ mb: '$7' }}>
-                Text should be aligned with the yellow box along the left edge. There's some optical
-                shit going on here too, so this is not gospel.
+                Text should be aligned with the yellow box along the left edge. There&apos;s some
+                optical shit going on here too, so this is not gospel.
               </Paragraph>
             </Container>
             <Container size="2">

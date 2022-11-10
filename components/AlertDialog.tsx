@@ -45,6 +45,8 @@ const AlertDialogContent = React.forwardRef<
   </AlertDialogPrimitive.Portal>
 ));
 
+AlertDialogContent.displayName = 'AlertDialogContent';
+
 const AlertDialogTitle = AlertDialogPrimitive.Title;
 const AlertDialogDescription = AlertDialogPrimitive.Description;
 const AlertDialogAction = AlertDialogPrimitive.Action;

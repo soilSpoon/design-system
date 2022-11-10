@@ -11,7 +11,6 @@ import { ControlGroup } from '../components/ControlGroup';
 import { Text } from '../components/Text';
 import { Link } from '../components/Link';
 import { AppBar } from '../components/AppBar';
-import { Banner } from '../components/Banner';
 import { Alert } from '../components/Alert';
 import { Kbd } from '../components/Kbd';
 import { Separator } from '../components/Separator';
@@ -29,8 +28,6 @@ import { Section } from '../components/Section';
 import { Avatar } from '../components/Avatar';
 import { TabLink } from '../components/TabLink';
 import { SimpleToggle } from '../components/SimpleToggle';
-import { ScrollArea } from '../components/Scrollbar';
-import { Tooltip } from '../components/Tooltip';
 import { Slider } from '../components/Slider';
 import { Dialog, DialogTrigger, DialogContent } from '../components/Dialog';
 import { Sheet, SheetTrigger, SheetContent } from '../components/Sheet';
@@ -48,7 +45,6 @@ import {
   AlertDialogCancel,
 } from '../components/AlertDialog';
 import { Tabs, TabsList, TabsTrigger, TabsContent } from '../components/Tabs';
-import { Label } from '../components/Label';
 import { Skeleton } from '../components/Skeleton';
 import { RadioCardGroup, RadioCard } from '../components/RadioCard';
 import {
@@ -62,7 +58,6 @@ import { Paragraph } from '../components/Paragraph';
 // import { Color } from '../custom/Color';
 import { Avatars } from '../custom/Avatars';
 import { Kbds } from '../custom/Kbds';
-import { Menus } from '../custom/Menus';
 import { Status } from '../components/Status';
 import {
   DropdownMenu,
@@ -96,29 +91,15 @@ import {
   CheckIcon,
   CodeIcon,
   CommitIcon,
-  Cross1Icon,
   ExclamationTriangleIcon,
-  FontItalicIcon,
-  FontStyleIcon,
   GearIcon,
-  HeadingIcon,
-  LetterCaseCapitalizeIcon,
-  LetterCaseLowercaseIcon,
-  LetterCaseUppercaseIcon,
   LockClosedIcon,
-  MagnifyingGlassIcon,
   PlusIcon,
   ReaderIcon,
   ShadowNoneIcon,
-  TextAlignCenterIcon,
-  TextAlignJustifyIcon,
-  TextAlignLeftIcon,
-  TextAlignRightIcon,
   TriangleUpIcon,
   VideoIcon,
-  RocketIcon,
 } from '@radix-ui/react-icons';
-import { Toolbar } from '../custom/Toolbar';
 import { DarkThemeButton } from '../custom/DarkThemeButton';
 
 function Home() {
@@ -480,10 +461,10 @@ function Home() {
           <Container size="2" css={{ my: '$9' }}>
             <Paragraph>
               This is a really long paragraph of text, to demonstrate prose text, like for example,
-              the kind you might read in a blog post. The reason we're using prose here is because
-              the most common use case for this container size is longform text. So we're previewing
-              some longform text here so we can make sure the container width provides an optimal
-              line length for this font size.
+              the kind you might read in a blog post. The reason we&apos;re using prose here is
+              because the most common use case for this container size is longform text. So
+              we&apos;re previewing some longform text here so we can make sure the container width
+              provides an optimal line length for this font size.
             </Paragraph>
           </Container>
           <Container size="3" css={{ my: '$9' }}>
@@ -496,22 +477,22 @@ function Home() {
               <Box>
                 <Text as="p" size="4" css={{ lineHeight: '27px' }}>
                   This is a much shorter paragraph of text, to demonstrate narrow text container.
-                  The reason we're using text here is because one common use case for this container
-                  size is a 3-up grid.
+                  The reason we&apos;re using text here is because one common use case for this
+                  container size is a 3-up grid.
                 </Text>
               </Box>
               <Box>
                 <Text as="p" size="4" css={{ lineHeight: '27px' }}>
                   This is a much shorter paragraph of text, to demonstrate narrow text container.
-                  The reason we're using text here is because one common use case for this container
-                  size is a 3-up grid.
+                  The reason we&apos;re using text here is because one common use case for this
+                  container size is a 3-up grid.
                 </Text>
               </Box>
               <Box>
                 <Text as="p" size="4" css={{ lineHeight: '27px' }}>
                   This is a much shorter paragraph of text, to demonstrate narrow text container.
-                  The reason we're using text here is because one common use case for this container
-                  size is a 3-up grid.
+                  The reason we&apos;re using text here is because one common use case for this
+                  container size is a 3-up grid.
                 </Text>
               </Box>
             </Grid>
@@ -906,10 +887,10 @@ function Home() {
               </Paragraph>
               <Paragraph size="1">
                 This is a Paragraph size 1. A really long paragraph of text, to demonstrate prose
-                text, like for example, the kind you might read in a blog post. The reason we're
-                using prose here is because the most common use case for this container size is
-                longform text. So we're previewing some longform text here so we can make sure the
-                container width provides an optimal line length for this font size.
+                text, like for example, the kind you might read in a blog post. The reason
+                we&apos;re using prose here is because the most common use case for this container
+                size is longform text. So we&apos;re previewing some longform text here so we can
+                make sure the container width provides an optimal line length for this font size.
               </Paragraph>
               <Paragraph>
                 This is a Sup and Sub demo. The kind you might read in a blog post.<Sup>1</Sup> This
@@ -1240,7 +1221,10 @@ function Home() {
                 mt: '$6',
               }}
             >
-              <Image src="https://images.unsplash.com/photo-1447690709975-318628b14c57?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2550&q=80" />
+              <Image
+                src="https://images.unsplash.com/photo-1447690709975-318628b14c57?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2550&q=80"
+                alt=""
+              />
               <Box
                 css={{
                   position: 'absolute',
@@ -1258,7 +1242,10 @@ function Home() {
                 mt: '$6',
               }}
             >
-              <Image src="https://images.unsplash.com/photo-1453235421161-e41b42ebba05?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2550&q=80" />
+              <Image
+                src="https://images.unsplash.com/photo-1453235421161-e41b42ebba05?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2550&q=80"
+                alt=""
+              />
               <Box
                 css={{
                   position: 'absolute',
@@ -1508,11 +1495,11 @@ function Home() {
               Code
             </Heading>
             <Paragraph>
-              There are 5 variants to choose from. Use <Code>console.log('Radix').console</Code> is
-              for positive states. Traditional business literature won’t help you solve it- most of
-              that stuff is focused on life after product/market fit, after the Trough of Sorrow. A
-              lot of startup stuff is focused on the initial phases, when you don’t have a team,
-              idea, or investors.
+              There are 5 variants to choose from. Use{' '}
+              <Code>console.log(&apos;Radix&apos;).console</Code> is for positive states.
+              Traditional business literature won’t help you solve it- most of that stuff is focused
+              on life after product/market fit, after the Trough of Sorrow. A lot of startup stuff
+              is focused on the initial phases, when you don’t have a team, idea, or investors.
             </Paragraph>
           </Container>
         </Section>
@@ -1575,6 +1562,7 @@ function Home() {
                   <Image
                     src="https://images.unsplash.com/photo-1453235421161-e41b42ebba05?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2550&q=80"
                     css={{ btlr: '$3', btrr: '$3' }}
+                    alt=""
                   />
                   <Box css={{ p: '$3' }}>
                     <Heading css={{ mb: '$2' }}>
@@ -1613,6 +1601,7 @@ function Home() {
                   <Image
                     src="https://images.unsplash.com/photo-1453235421161-e41b42ebba05?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2550&q=80"
                     css={{ br: '$1', mb: '$3' }}
+                    alt=""
                   />
                   <Heading css={{ mb: '$2' }}>
                     Modulz raises $4.2M to close the gap between design and code
@@ -1833,8 +1822,8 @@ function Home() {
                 </PopoverTrigger>
                 <PopoverContent css={{ padding: '$3' }}>
                   <Text size="2" css={{ lineHeight: '18px' }}>
-                    The other main improvement is with tables, which we'll probably use a lot. With
-                    horizontal overflow on small devices and when zoomed in.
+                    The other main improvement is with tables, which we&apos;ll probably use a lot.
+                    With horizontal overflow on small devices and when zoomed in.
                   </Text>
                 </PopoverContent>
               </Popover>
@@ -1844,8 +1833,8 @@ function Home() {
                 </PopoverTrigger>
                 <PopoverContent css={{ padding: '$3' }} hideArrow>
                   <Text size="2" css={{ lineHeight: '18px' }}>
-                    The other main improvement is with tables, which we'll probably use a lot. With
-                    horizontal overflow on small devices and when zoomed in.
+                    The other main improvement is with tables, which we&apos;ll probably use a lot.
+                    With horizontal overflow on small devices and when zoomed in.
                   </Text>
                 </PopoverContent>
               </Popover>
@@ -1855,8 +1844,8 @@ function Home() {
                 </PopoverTrigger>
                 <PopoverContent css={{ padding: '$3' }}>
                   <Text size="2" css={{ lineHeight: '18px' }}>
-                    The other main improvement is with tables, which we'll probably use a lot. With
-                    horizontal overflow on small devices and when zoomed in.
+                    The other main improvement is with tables, which we&apos;ll probably use a lot.
+                    With horizontal overflow on small devices and when zoomed in.
                   </Text>
                 </PopoverContent>
               </Popover>
@@ -1866,8 +1855,8 @@ function Home() {
                 </PopoverTrigger>
                 <PopoverContent css={{ padding: '$3' }}>
                   <Text size="2" css={{ lineHeight: '18px' }}>
-                    The other main improvement is with tables, which we'll probably use a lot. With
-                    horizontal overflow on small devices and when zoomed in.
+                    The other main improvement is with tables, which we&apos;ll probably use a lot.
+                    With horizontal overflow on small devices and when zoomed in.
                   </Text>
                 </PopoverContent>
               </Popover>
@@ -1877,8 +1866,8 @@ function Home() {
                 </PopoverTrigger>
                 <PopoverContent css={{ padding: '$3' }}>
                   <Text size="2" css={{ lineHeight: '18px' }}>
-                    The other main improvement is with tables, which we'll probably use a lot. With
-                    horizontal overflow on small devices and when zoomed in.
+                    The other main improvement is with tables, which we&apos;ll probably use a lot.
+                    With horizontal overflow on small devices and when zoomed in.
                   </Text>
                 </PopoverContent>
               </Popover>
@@ -1888,8 +1877,8 @@ function Home() {
                 </PopoverTrigger>
                 <PopoverContent css={{ padding: '$3' }}>
                   <Text size="2" css={{ lineHeight: '18px' }}>
-                    The other main improvement is with tables, which we'll probably use a lot. With
-                    horizontal overflow on small devices and when zoomed in.
+                    The other main improvement is with tables, which we&apos;ll probably use a lot.
+                    With horizontal overflow on small devices and when zoomed in.
                   </Text>
                 </PopoverContent>
               </Popover>
@@ -1901,8 +1890,8 @@ function Home() {
                 </PopoverTrigger>
                 <PopoverContent css={{ padding: '$3' }}>
                   <Text size="2" css={{ lineHeight: '18px' }}>
-                    The other main improvement is with tables, which we'll probably use a lot. With
-                    horizontal overflow on small devices and when zoomed in.
+                    The other main improvement is with tables, which we&apos;ll probably use a lot.
+                    With horizontal overflow on small devices and when zoomed in.
                   </Text>
                 </PopoverContent>
               </Popover>
@@ -1917,8 +1906,8 @@ function Home() {
                 </PopoverTrigger>
                 <PopoverContent css={{ padding: '$3' }}>
                   <Text size="2" css={{ lineHeight: '18px' }}>
-                    The other main improvement is with tables, which we'll probably use a lot. With
-                    horizontal overflow on small devices and when zoomed in.
+                    The other main improvement is with tables, which we&apos;ll probably use a lot.
+                    With horizontal overflow on small devices and when zoomed in.
                   </Text>
                 </PopoverContent>
               </Popover>
@@ -1942,9 +1931,9 @@ function Home() {
                 </AccordionTrigger>
                 <AccordionContent>
                   <Text size="3" css={{ lineHeight: '23px' }}>
-                    The other main improvement is with tables, which we'll probably use a lot. With
-                    horizontal overflow on small devices and when zoomed in, tables are a pain to
-                    navigate. I added a focus wrapper that will announce the table context to the
+                    The other main improvement is with tables, which we&apos;ll probably use a lot.
+                    With horizontal overflow on small devices and when zoomed in, tables are a pain
+                    to navigate. I added a focus wrapper that will announce the table context to the
                     user when focused, which also allows keyboard users to navigate the overflow
                     more easily.
                   </Text>
@@ -1958,9 +1947,9 @@ function Home() {
                 </AccordionTrigger>
                 <AccordionContent>
                   <Text size="3" css={{ lineHeight: '23px' }}>
-                    The other main improvement is with tables, which we'll probably use a lot. With
-                    horizontal overflow on small devices and when zoomed in, tables are a pain to
-                    navigate. I added a focus wrapper that will announce the table context to the
+                    The other main improvement is with tables, which we&apos;ll probably use a lot.
+                    With horizontal overflow on small devices and when zoomed in, tables are a pain
+                    to navigate. I added a focus wrapper that will announce the table context to the
                     user when focused, which also allows keyboard users to navigate the overflow
                     more easily.
                   </Text>
@@ -1974,9 +1963,9 @@ function Home() {
                 </AccordionTrigger>
                 <AccordionContent>
                   <Text size="3" css={{ lineHeight: '23px' }}>
-                    The other main improvement is with tables, which we'll probably use a lot. With
-                    horizontal overflow on small devices and when zoomed in, tables are a pain to
-                    navigate. I added a focus wrapper that will announce the table context to the
+                    The other main improvement is with tables, which we&apos;ll probably use a lot.
+                    With horizontal overflow on small devices and when zoomed in, tables are a pain
+                    to navigate. I added a focus wrapper that will announce the table context to the
                     user when focused, which also allows keyboard users to navigate the overflow
                     more easily.
                   </Text>
@@ -1990,9 +1979,9 @@ function Home() {
                 </AccordionTrigger>
                 <AccordionContent>
                   <Text size="3" css={{ lineHeight: '23px' }}>
-                    The other main improvement is with tables, which we'll probably use a lot. With
-                    horizontal overflow on small devices and when zoomed in, tables are a pain to
-                    navigate. I added a focus wrapper that will announce the table context to the
+                    The other main improvement is with tables, which we&apos;ll probably use a lot.
+                    With horizontal overflow on small devices and when zoomed in, tables are a pain
+                    to navigate. I added a focus wrapper that will announce the table context to the
                     user when focused, which also allows keyboard users to navigate the overflow
                     more easily.
                   </Text>

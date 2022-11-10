@@ -1,6 +1,7 @@
 import React from 'react';
 import NextDocument, { Html, Head, Main, NextScript } from 'next/document';
 import { getCssText, reset } from '../stitches.config';
+import '../styles/fonts.css';
 
 /**
  * Get the css and reset the internal css representation.
@@ -18,7 +19,6 @@ export default class Document extends NextDocument {
     return (
       <Html lang="en">
         <Head>
-          <link rel="stylesheet" href="/fonts/fonts.css" />
           <style id="stitches" dangerouslySetInnerHTML={{ __html: getCssAndReset() }} />
         </Head>
         <body>

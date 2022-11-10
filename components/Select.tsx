@@ -57,4 +57,6 @@ export const Select = React.forwardRef<React.ElementRef<typeof StyledSelect>, Se
   )
 );
 
+Select.displayName = 'Select';
+
 Select.toString = () => `.${SelectWrapper.className}`;

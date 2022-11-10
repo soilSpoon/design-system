@@ -20,6 +20,8 @@ export const Accordion = React.forwardRef<React.ElementRef<typeof StyledAccordio
   )
 );
 
+Accordion.displayName = 'Accordion';
+
 const StyledItem = styled(AccordionPrimitive.Item, {
   borderTop: '1px solid $colors$slate6',
 
@@ -86,6 +88,8 @@ export const AccordionTrigger = React.forwardRef<
     </StyledTrigger>
   </StyledHeader>
 ));
+
+AccordionTrigger.displayName = 'AccordionTrigger';
 
 const StyledContent = styled(AccordionPrimitive.Content, {
   p: '$2',

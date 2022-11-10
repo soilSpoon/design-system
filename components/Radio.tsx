@@ -94,3 +94,5 @@ export const Radio = React.forwardRef<React.ElementRef<typeof StyledRadio>, Radi
     </StyledRadio>
   )
 );
+
+Radio.displayName = 'Radio';
